@@ -16,19 +16,19 @@
 
 ---
 
-## Technical Steps
+## Technical steps
 
-### 1. Database Setup
+### 1. Database setup
 - Launch using `docker-compose up -d`
 - Stop using `docker-compose down`
 - Connect via pgAdmin if needed
 
-### 2. Data Insertion
+### 2. Data insertion
 - `script.py` reads both CSV files
 - Creates tables and the necessary join
 - Robust and automated data insertion
 
-### 3. SQL Queries (in `requetes.sql`)
+### 3. SQL queries (in `requetes.sql`)
 - a. Total number of cars by model and country  
 - b. Country with the most units of each model  
 - c. Models sold in the USA but not in France  
@@ -42,7 +42,7 @@
 
 ---
 
-## Technical Choices
+## Technical choices
 
 - **Flexible relational model**: I accounted for model variants over different years. Potential duplicates are filtered thoughtfully to retain only relevant versions for a given year.
 
@@ -63,7 +63,7 @@
 
 ---
 
-## Execution Guide
+## Execution guide
 
 ```bash
 # Step 1: Start the database
